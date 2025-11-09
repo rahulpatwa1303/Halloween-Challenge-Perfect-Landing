@@ -313,7 +313,7 @@ export default function NewInteractiveMap({ collectedCandies, onCollectCandy, th
                         {getPopularCities().map(city => (
                           <button
                             key={city.id}
-                            onClick={() => handleCitySelect(city)}
+                            onClick={() => handleCitySelect(city as any)}
                             className="w-full px-2 py-2 text-left hover:bg-gray-700 transition-colors rounded"
                           >
                             <div className="text-white font-medium text-sm">{city.name}</div>
@@ -333,7 +333,7 @@ export default function NewInteractiveMap({ collectedCandies, onCollectCandy, th
                                 const city = locationsData.cities.find(c => 
                                   search.includes(c.name) && search.includes(c.state)
                                 );
-                                if (city) handleCitySelect(city);
+                                if (city) handleCitySelect(city as any);
                               }}
                               className="w-full px-2 py-2 text-left hover:bg-gray-700 transition-colors rounded"
                             >
@@ -648,7 +648,7 @@ export default function NewInteractiveMap({ collectedCandies, onCollectCandy, th
                           {getPopularCities().map(city => (
                             <button
                               key={city.id}
-                              onClick={() => handleCitySelect(city)}
+                              onClick={() => handleCitySelect(city as any)}
                               className="w-full px-3 py-2 text-left hover:bg-gray-700 transition-colors rounded"
                             >
                               <div className="text-white font-medium">{city.name}</div>
@@ -671,7 +671,7 @@ export default function NewInteractiveMap({ collectedCandies, onCollectCandy, th
                                   const city = locationsData.cities.find(c => 
                                     search.includes(c.name) && search.includes(c.state)
                                   );
-                                  if (city) handleCitySelect(city);
+                                  if (city) handleCitySelect(city as any);
                                 }}
                                 className="w-full px-3 py-2 text-left hover:bg-gray-700 transition-colors rounded flex items-center gap-2"
                               >
@@ -708,7 +708,7 @@ export default function NewInteractiveMap({ collectedCandies, onCollectCandy, th
                       {(searchQuery ? filteredCities : locationsData.cities).map(city => (
                         <button
                           key={city.id}
-                          onClick={() => handleCitySelect(city)}
+                          onClick={() => handleCitySelect(city as any)}
                           className="w-full px-4 py-3 text-left hover:bg-gray-700 transition-colors border-b border-gray-700 last:border-b-0"
                         >
                           <div className="text-white font-medium">{city.name}</div>

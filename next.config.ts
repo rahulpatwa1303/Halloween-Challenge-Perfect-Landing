@@ -1,13 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: "export",
   images: {
     unoptimized: true,
   },
-  basePath: '/Halloween-Challenge-Perfect-Landing',
-  assetPrefix: '/Halloween-Challenge-Perfect-Landing/',
-    typescript: {
+  basePath: "/Halloween-Challenge-Perfect-Landing",
+  assetPrefix: "/Halloween-Challenge-Perfect-Landing/",
+  typescript: {
     ignoreBuildErrors: true,
   },
 };
