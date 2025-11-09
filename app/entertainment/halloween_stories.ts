@@ -1,4 +1,4 @@
-[
+export const halloweenStories :any = [
   {
     "id": 1,
     "title": "Rules of the Subreddit: Please Read Before Posting (Updated)",
@@ -1169,4 +1169,4 @@
     "upvotes": 3,
     "category": "funny"
   }
-]
+] 

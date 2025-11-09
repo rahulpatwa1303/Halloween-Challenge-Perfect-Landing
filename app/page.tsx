@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import Image from "next/image";
+import skullImage from "../public/skull.svg";
 
 export default function HomePage() {
   const { theme } = useTheme();
@@ -67,16 +69,7 @@ export default function HomePage() {
                 
                 <Link
                   href="/entertainment"
-                  className="group border-2 text-gray-300 hover:text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3 hover:bg-opacity-100"
-                  style={{ 
-                    borderColor: '#f64295'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = '#f64295';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = 'transparent';
-                  }}
+                  className="group border-2 border-[#f64295] text-gray-300 hover:text-white hover:bg-[#f64295] px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3"
                 >
                   Read Stories
                 </Link>
@@ -86,14 +79,15 @@ export default function HomePage() {
             {/* Right side - Image */}
             <div className="flex justify-center lg:justify-end order-first lg:order-last">
               <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
-                <img
-                  src="/skull.svg"
+                <Image
+                  src={skullImage}
                   alt="Spooky Halloween illustration"
                   className="w-full h-auto object-contain drop-shadow-2xl"
                   style={{ 
                     maxHeight: '400px',
                     filter: 'drop-shadow(0 10px 20px rgba(246, 66, 149, 0.2))'
                   }}
+                  priority
                 />
               </div>
             </div>

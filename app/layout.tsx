@@ -18,8 +18,12 @@ const creepster = Creepster({
 });
 
 export const metadata: Metadata = {
-  title: "Trick or Treat Map",
-  description: "An interactive Halloween map experience!",
+  title: "Spooky Trick or Treat Map | Interactive Halloween Experience 🎃",
+  description: "Discover the ultimate trick-or-treat locations with our interactive Halloween map! Explore 40+ candy spots across 10+ cities, read spooky stories, watch Halloween movies, and enjoy immersive effects. Perfect for planning your Halloween adventure!",
+  keywords: ["halloween", "trick or treat", "halloween map", "candy locations", "halloween stories", "spooky", "interactive map", "halloween 2025"],
+  authors: [{ name: "Rahul Patwa", url: "https://github.com/rahulpatwa1303" }],
+  creator: "Rahul Patwa",
+  publisher: "Rahul Patwa",
 };
 
 export default function RootLayout({
