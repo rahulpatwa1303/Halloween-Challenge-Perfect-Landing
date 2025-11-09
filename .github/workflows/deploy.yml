@@ -35,7 +35,8 @@ jobs:
       - name: Build
         run: npm run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        # This is the line you need to change from v2 to v3
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
@@ -48,4 +49,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        # This is the line you need to change from v3 to v4
+        uses: actions/deploy-pages@v4
