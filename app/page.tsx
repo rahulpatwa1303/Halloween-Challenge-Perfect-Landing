@@ -66,7 +66,7 @@ export default function HomePage() {
                 </Link>
                 
                 <Link
-                  href="/stories"
+                  href="/entertainment"
                   className="group border-2 text-gray-300 hover:text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3 hover:bg-opacity-100"
                   style={{ 
                     borderColor: '#f64295'

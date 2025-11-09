@@ -12,8 +12,8 @@
       "icon": "🗺️"
     },
     {
-      "label": "Stories",
-      "route": "/stories",
+      "label": "Entertainment",
+      "route": "/entertainment",
       "icon": "👻"
     }
   ]

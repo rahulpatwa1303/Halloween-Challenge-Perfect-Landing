@@ -36,10 +36,7 @@ export default function RootLayout({
             
             {/* Spooky Features */}
             <CrawlingHand />
-            {/* <FloatingGhosts /> */}
-            {/* <SpookyCursorTrail /> */}
-            {/* <SpookySounds /> */}
-            {/* <SpookyModeToggle /> */}
+ 
             
             <main className="pt-16">
               {children}
