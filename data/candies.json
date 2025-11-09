@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Witch’s Hut",
+    "coords": [40.7132, -74.002],
+    "animation": "witch-candy.json"
+  },
+  {
+    "id": 2,
+    "name": "Haunted Graveyard",
+    "coords": [40.715, -74.006],
+    "animation": "ghost-candy.json"
+  },
+  {
+    "id": 3,
+    "name": "Spooky Mansion",
+    "coords": [40.71, -74.005],
+    "animation": "vampire-candy.json"
+  },
+  {
+    "id": 4,
+    "name": "Pumpkin Patch",
+    "coords": [40.718, -74.001],
+    "animation": "pumpkin-candy.json"
+  },
+  {
+    "id": 5,
+    "name": "Creepy Carnival",
+    "coords": [40.712, -73.998],
+    "animation": "clown-candy.json"
+  },
+  {
+    "id": 6,
+    "name": "Forgotten Crypt",
+    "coords": [40.708, -74.008],
+    "animation": "skeleton-candy.json"
+  },
+  {
+    "id": 7,
+    "name": "Bat Cavern",
+    "coords": [40.716, -74.01],
+    "animation": "bat-candy.json"
+  },
+  {
+    "id": 8,
+    "name": "Mad Scientist's Lab",
+    "coords": [40.709, -74.001],
+    "animation": "frankenstein-candy.json"
+  }
+]

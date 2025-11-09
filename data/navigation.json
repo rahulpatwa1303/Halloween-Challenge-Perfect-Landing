@@ -1,0 +1,20 @@
+{
+  "title": "Spookify",
+  "items": [
+    {
+      "label": "Home",
+      "route": "/",
+      "icon": "🏠"
+    },
+    {
+      "label": "Map",
+      "route": "/map",
+      "icon": "🗺️"
+    },
+    {
+      "label": "Stories",
+      "route": "/stories",
+      "icon": "👻"
+    }
+  ]
+}

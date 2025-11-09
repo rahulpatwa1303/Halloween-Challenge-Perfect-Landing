@@ -5,13 +5,6 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,8 +12,73 @@
   }
 }
 
-body {
+/* Ensure font variables are available */
+.font-creepster {
+  font-family: var(--font-creepster), cursive !important;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Apply overflow hidden only to map page */
+.map-page {
+  overflow: hidden;
+  height: 100vh;
+}
+
+#__next {
+  height: 100%;
+  width: 100%;
+}
+
+/* Ensure root container takes full height */
+main {
+
+  overflow: auto;
+}
+
+/* Ensure navbar stays on top and visible */
+nav {
+  pointer-events: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 9999 !important;
+  position: fixed !important;
+}
+
+/* Prevent map from interfering with navbar */
+.leaflet-container {
+  z-index: 1 !important;
+}
+
+/* Ensure map controls don't interfere with navbar */
+.leaflet-control-zoom {
+  z-index: 999 !important;
+}
+
+/* Map components z-index hierarchy */
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* Force all map-related elements to stay below navbar */
+[class*="leaflet"] {
+  z-index: 999 !important;
+}
+
+/* Override any high z-index in map components */
+.leaflet-popup,
+.leaflet-popup-pane,
+.leaflet-marker-pane,
+.leaflet-shadow-pane,
+.leaflet-overlay-pane,
+.leaflet-map-pane {
+  z-index: 999 !important;
 }
